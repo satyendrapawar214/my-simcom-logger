@@ -1,9 +1,7 @@
 const https = require('https');
-const fs = require('fs');
-const path = require('path');
 const options = {
-  key: fs.readFileSync(path.join(__dirname, process.env.SSL_KEY_PATH || 'key.pem')),
-  cert: fs.readFileSync(path.join(__dirname, process.env.SSL_CERT_PATH || 'cert.pem'))
+  key: process.env.SSL_KEY,   // Reads from Render secret
+  cert: process.env.SSL_CERT  // Reads from Render secret
 };
 const server = https.createServer(options, (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
