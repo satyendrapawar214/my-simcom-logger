@@ -1,13 +1,11 @@
-{
-  "name": "simcom-data-logger-server",
+// {
+  "name": "https-server",
   "version": "1.0.0",
-  "description": "Server to receive data from SIMCOM A7670C client.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "license": "ISC" 
+  "engines": {
+    "node": "18.x"  // Or your Node version
+  }
 }
