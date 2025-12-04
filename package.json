@@ -1,4 +1,4 @@
-// {
+ {
   "name": "https-server",
   "version": "1.0.0",
   "main": "server.js",
@@ -6,6 +6,6 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "18.x"  // Or your Node version
+    "node": "18.x"  
   }
 }
